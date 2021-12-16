@@ -36,3 +36,69 @@
     transform: rotate(360deg);
   }
 }
+
+.RenderContainer {
+  height: 570px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: #424242;
+}
+
+
+.Footer {
+	
+	height: calc(100%-624px);
+	width: 100%;
+	color:#FFFFFF; 
+	font-size:1.5em;
+	text-align: center;
+	line-height:100px;
+
+	background: rgb(255,121,63);
+  overflow-y: hidden;
+}
+
+.logoFooter {
+	width: 356px;
+	float: left;
+	margin-left: 10px;
+}
+
+.Redes {
+	float: right;
+	padding-right: 15px;
+}
+
+.fb {
+	width: 32px;
+	margin-right: 5px;
+}
+.twt {
+	width: 32px;
+	overflow: hidden;
+	margin-right: 5px;
+}
+.ig {
+	width: 32px;
+	overflow: hidden;
+}
+
+ /* width */
+::-webkit-scrollbar {
+	width: 10px;
+}
+  
+  /* Track */
+::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+  
+  /* Handle */
+::-webkit-scrollbar-thumb {
+	background: #888;
+}
+  
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+} 

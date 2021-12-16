@@ -1,0 +1,116 @@
+.ayus {
+    margin-top: 25px;
+}
+
+.Ayudantia{
+    padding: 13px;
+    padding-left: 26px;
+    
+    width: 100%;
+    background-color: #b6c7cf;
+}
+.AyudantiasDisponibles-container{
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.AyudantiasDisponibles-container-item{
+    display: block;
+    flex-direction: column;
+    width: 100%;
+}
+.AyudantiasDisponibles-container-title{
+    font-size: 1.4em;
+    font-weight: bold;
+    text-align: left;
+}
+
+.AyudantiasDisponibles-vacantes{
+    font-size: 1.1em;
+    font-weight: lighter;
+    text-align: left;
+}
+
+.myButton{
+    position: relative;
+    float: left;
+    
+    height: auto;
+    width: 180px;
+    padding-left: 15px;
+
+    background-color: white;
+    border: 2px solid rgba(88,67,67,0.43);
+    color: black;
+
+
+    font-size: 14px;
+    text-align: left;
+    transition: border 2s, background-color 2s;
+}
+
+.depa {
+    overflow: hidden;
+    float: left;
+}
+.dropSymbol{
+    float: right;
+    padding-right: 5px;
+}
+
+.InfoButton{
+    position: relative;
+    height: auto;
+    width: 110px;
+    padding: 5px;
+
+    border: 2px solid rgb(244,132,69);
+    background-color: white;
+    color: rgb(253, 164, 31);
+
+    font-size: 14px;
+    transition: border 2s, background-color 2s;
+}
+
+.InfoButton:hover{
+    border: 2px solid rgb(244,132,69);
+}
+
+.PostularButton{
+    position: relative;
+    height: auto;
+    width: 110px;
+    padding: 5px;
+
+    background-color: rgb(244,132,69);
+    border: 2px solid rgb(244,132,69);
+    color: white;
+
+
+    font-size: 14px;
+    transition: border 2s, background-color 2s;
+    margin-left: 25px;
+}
+
+.PostularButton:hover{
+    background-color: rgba(253, 164, 31, 0.822);
+    border: 2px solid rgba(253, 164, 31, 0.822);
+}
+
+.Busqueda{
+    float: right;
+    width: 280px;
+    border: 0;
+}
+.buscador{
+    border-radius: 0;
+    padding: 3px;
+    padding-left: 10px;
+    margin-bottom: 8px;
+}
+
+.botonesContainer{
+    float: right;
+    padding-top: 10px;
+}

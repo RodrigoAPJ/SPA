@@ -1,0 +1,12 @@
+.borde_M {
+    width: 800px;
+	height: 475px;
+	text-align: center;
+	padding: 25px;
+	margin-left: 25%;
+	margin-top: 25px;
+	padding-right: 0;
+	border: 2px solid gray;
+    background-color: #b6c7cf;
+    border-style:ridge;
+}

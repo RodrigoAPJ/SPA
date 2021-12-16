@@ -8,6 +8,7 @@ class Navbar extends Component {
         super();
         this.changePage = this.changePage.bind(this);
         this.handleClick = this.handleClick.bind(this);
+        this.pageIndex = -1;
     }
     
     state = {clicked: false}
@@ -16,7 +17,8 @@ class Navbar extends Component {
         
     }
     
-    changePage(value){
+    changePage(value, index){
+        this.pageIndex = index;
         this.props.sendData(value)
     }
 
@@ -27,21 +29,34 @@ class Navbar extends Component {
     render(){
         return(
             <nav className="NavbarItems">
-                {/*
-                <h1 className="navbar-logo">SPA UTFSM <i className="fas fa-file-signature"></i></h1>
-                <div className="menu-icon" onClick={this.handleClick}>
-                    <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
-                </div>
-                */}
+                
+                <ul className='nav-menuSPA'>
+                    <li> 
+                        <a className="SPA" ref="#" onClick={() => this.changePage("SPA")}>
+                            SPA
+                        </a>
+                    </li>
+                </ul>
                 <ul className={this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
                     {MenuItems.map((item, index) => {
-                        return (
-                            <li className="navLi" key={index}>
-                                <a className={item.cName} href="#" onClick={() => this.changePage(item.url)}>
-                                    {item.title}
-                                </a>
-                            </li>
-                        )
+
+                        if(this.pageIndex ==  index){
+                            return (
+                                <li className={item.clicado} key={index}>
+                                    <a className={item.cName} href="#" onClick={() => this.changePage(item.url,index)}>
+                                        {item.title}
+                                    </a>
+                                </li>
+                            )
+                        } else {
+                            return (
+                                <li className="navLi" key={index}>
+                                    <a className={item.cName} href="#" onClick={() => this.changePage(item.url,index)}>
+                                        {item.title}
+                                    </a>
+                                </li>
+                            )
+                        }
                     }
                     )}
                 </ul>

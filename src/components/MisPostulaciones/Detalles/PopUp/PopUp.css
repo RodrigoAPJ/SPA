@@ -1,0 +1,64 @@
+.borde_PopUp {
+    width: 400px;
+	height: 250px;
+	text-align: left;
+	border: 2px solid gray;
+    border-style:ridge;
+    background-color: #b6c7cf;
+}
+.p-container{
+    padding: 0;
+    margin-top: 10%;
+    margin-left: calc(50% - 200px);
+    float: center;
+
+}
+
+.Titulo_PopUp{
+    margin-top: 15px;
+	text-align: center;
+	font-size: 28px;
+	padding-left: 15%;
+	padding-right: 15%;
+}
+
+.Boton_si{
+    position: relative;
+    height: auto;
+    width: 110px;
+    padding: 5px;
+    margin-top: 10px;
+    margin-left: calc(34% - 55px);
+    border: 2px solid rgb(244,132,69);
+    background-color: white;
+    color: rgb(253, 164, 31);
+
+    font-size: 14px;
+    transition: border 2s, background-color 2s;
+}
+
+.Boton_no{
+    position: relative;
+    height: auto;
+    width: 110px;
+    padding: 5px;
+    margin-top: 10px;
+    margin-right: calc(30% - 55px);
+    background-color: rgb(244,132,69);
+    border: 2px solid rgb(244,132,69);
+    color: white;
+
+
+    font-size: 14px;
+    transition: border 2s, background-color 2s;
+    margin-left: 25px;
+}
+
+.Boton_si:hover{
+    border: 2px solid rgb(244,132,69);
+}
+
+.Boton_no:hover{
+    background-color: rgba(253, 164, 31, 0.822);
+    border: 2px solid rgba(253, 164, 31, 0.822);
+}

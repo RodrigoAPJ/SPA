@@ -1,0 +1,15 @@
+.postu{
+    margin-top: 0; 
+    height: inherit;
+}
+
+.ESTADO {
+    float: left;
+    height: inherit;
+    background-color: #b6c7cf;
+}
+
+.DETALLE {
+    height: inherit;
+    overflow-x: hidden;
+}

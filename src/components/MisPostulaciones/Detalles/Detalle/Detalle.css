@@ -1,0 +1,103 @@
+.borde_D {
+    width: 600px;
+	height: 500px;
+	text-align: left;
+	padding: 20px;
+	margin-left: calc(50% - 300px);
+	margin-top: 25px;
+	padding-right: 0;
+	border: 0px solid gray;
+    border-style:ridge;
+	background-color: #b6c7cf;
+	border-radius: 8px;
+}
+
+.ulContainer {
+	padding: 0;
+	margin: 0;
+}
+
+.Titulos_D {
+	list-style-type: none;
+	font-size: large;
+	font-weight: bold;
+	padding: 0;
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	width: 100%;
+}
+
+.Titulo_D{
+	list-style-type: none;
+	font-weight: bold;
+	padding: 0;
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	width: 100%;
+
+	text-align: center;
+    font-size: 28px;
+	border-bottom: 1px ridge #94acb8;
+}
+
+.data {
+	list-style-type: none;
+	text-align: left;
+	margin-top: 10px;
+	font-size: large;
+	margin-left: 20px;
+	padding-left: 5px;
+	padding-bottom: 10px;
+}
+
+.Profesor{
+	text-align: left;
+}
+
+.Tabla {
+    margin: auto;
+    text-decoration: none;
+}
+
+.TituloTablaDetalle {
+    text-decoration: none;
+    padding: 10px;
+}
+
+.DatoTabla{
+	text-align: center;
+	font-size: smaller;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.TituloTablaMayor {
+    margin-top: 30px;
+	text-align: center;
+	font-size: 28px;
+	padding-left: 15%;
+	padding-right: 15%;
+}
+
+.DespostularButton{
+    position: center;
+    height: auto;
+    width: 200px;
+    padding: 5px;
+
+    background-color: rgb(244,132,69);
+    border: 2px solid rgb(244,132,69);
+    color: white;
+
+	float: right;
+    font-size: 14px;
+    transition: border 2s, background-color 2s;
+	margin-top: 20px;
+    margin-right: 40px;
+}
+
+.DespostularButton:hover{
+    background-color: rgba(253, 164, 31, 0.822);
+    border: 2px solid rgba(253, 164, 31, 0.822);
+}

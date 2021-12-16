@@ -1,0 +1,92 @@
+.borde_F {
+    width: 800px;
+	height: 475px;
+	text-align: left;
+	padding: 25px;
+	margin-left: 25%;
+	margin-top: 25px;
+	padding-right: 0;
+	border: 2px solid gray;
+    background-color: #b6c7cf;
+    border-style:ridge;
+}
+
+.Nombre_Perfil {
+	text-align: left;
+	padding: 25px;
+	margin-left: 5%;
+	margin-top: 110px;
+	padding-right: 0;
+}
+
+.Campus_Perfil {
+	text-align: left;
+	padding: 25px;
+	margin-left: 5%;
+	margin-top: 110px;
+	padding-right: 0;
+}
+
+.Prioridad_Perfil {
+	text-align: left;
+	padding: 25px;
+	margin-left: 5%;
+	padding-right: 0;
+}
+
+.Clase_Perfil {
+	text-align: left;
+	padding: 25px;
+	margin-left: 5%;
+	padding-right: 0;
+}
+
+.Rol_Perfil {
+	text-align: left;
+	padding: 25px;
+	margin-left: 5%;
+	padding-right: 0;
+}
+
+.Carrera_Perfil {
+	text-align: left;
+	padding: 25px;
+	margin-left: 5%;
+	padding-right: 0;
+}
+
+.myButton_Perfil{
+    position: relative;
+    float: left;
+    
+    height: auto;
+    width: 180px;
+    padding-left: 15px;
+
+    background-color: rgb(255,121,63);
+    border: 2px solid rgba(88,67,67,0.43);
+    color: black;
+
+
+    font-size: 14px;
+    text-align: left;
+    transition: border 2s, background-color 2s;
+}
+
+.dropdown-container{
+    padding: 1px;
+    margin-left: 25%;
+    margin-top: 25px;
+}
+
+.dropdown-item{
+    background-color: rgb(255,121,63);
+}
+
+.dropdown-item:hover{
+    background-color: #b6c7cf;
+}
+
+.dropdown-menu{
+    background-color: rgb(255,121,63);
+}
