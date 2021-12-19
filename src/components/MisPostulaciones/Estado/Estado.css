@@ -9,11 +9,13 @@
 	font-size: large;
 	font-weight: bold;
 	padding: 0;
-	padding-top: 20px;
+	padding-top: 15px;
 	padding-left: 20px;
 	padding-right: 20px;
+	padding-bottom: 5px;
 	width: 100%;
-	border-bottom: 1px ridge #94acb8;
+	border-bottom: 1px ridge var(--color-6);
+	color: white;
 }
 
 .asignatura {
@@ -24,7 +26,13 @@
 .arrow {
 	float: right;
 	text-align: center;
-	padding-top: 6px;
+	color: white;
+}
+
+.arrowClicado {
+	float: right;
+	text-align: center;
+	color: black;
 }
 
 .estado {
@@ -43,12 +51,9 @@
 }
 
 .borde {
-	width: 430px;
+	width: 350px;
 	text-align: left;
-	border: 1px solid gray;
-	border-top: 0;
-	border-left: 0;
-	border-bottom: 0;
+	border: 0px;
     border-style:ridge;
 	height: inherit;
 	overflow-y: hidden;
@@ -64,29 +69,39 @@
 .Datos {
 	list-style-type: none;
 	text-align: left;
-	padding-top: 18px;
+	padding-top: 14px;
 	font-size: large;
 	padding-left: 20px;
-	padding-bottom: 18px;
+	padding-bottom: 14px;
 }
 .DatoClicado{
 	list-style-type: none;
 	text-align: left;
-	padding-top: 18px;
+	padding-top: 14px;
 	font-size: large;
 	padding-left: 20px;
-	padding-bottom: 18px;
-	background-color: #94acb8;
+	padding-bottom: 14px;
+	color: var(--color-7);
+	background-color: #886f88;
+	
 }
 
 .Datos:hover{
 	list-style-type: none;
 	cursor: pointer;
-    background-color: #94acb8;
+	color: var(--color-7);
+	background-color: #886f88;
+}
+
+.Datos:hover .arrow{
+	list-style-type: none;
+	cursor: pointer;
+	color: var(--color-7);
+	background-color: #886f88;
 }
 
 .estado.titulo {
-	width: 15%;
+	width: 20%;
 	overflow: hidden;
 }
 

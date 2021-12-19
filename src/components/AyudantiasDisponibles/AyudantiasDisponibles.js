@@ -1,18 +1,31 @@
 import React, { Component } from "react";
 import {AyudantiasDisponiblesDeEjemplo} from "./AyudantiasDisponiblesEjemplo";
 import './AyudantiasDisponibles.css';
+import { Modal } from 'react-bootstrap';
 
 class AyudantiasDisponibles extends Component {
     constructor(){
         super();
-        this.state = {data:AyudantiasDisponiblesDeEjemplo};
+        this.state = {data:AyudantiasDisponiblesDeEjemplo, show: false, index: -1};
+        this.handleShow = this.handleShow.bind(this);
         this.HandleInscripcion = this.HandleInscripcion.bind(this);
+        this.handleClose = this.handleClose.bind(this);
     }
 
     HandleInscripcion(index){
+        console.log(index);
         delete this.state.data[index];
         var spliced = this.state.data;
         this.setState({data:spliced});
+        this.handleClose();
+    }
+
+    handleShow(_index) {
+        this.setState({index:_index, show:true});
+    }
+
+    handleClose() {
+        this.setState({show:false});
     }
 
     render() {
@@ -73,7 +86,12 @@ class AyudantiasDisponibles extends Component {
                                                         <div className="botonesContainer">
                                                             <button className="InfoButton">Info</button>
                                                             
-                                                            <button className="PostularButton" onClick={() => this.HandleInscripcion(index)}>Postular</button>
+                                                            {
+                                                            //<button className="PostularButton" onClick={() => this.HandleInscripcion(index)}>Postular</button>
+                                                            }
+
+                                                            <button className="PostularButton" onClick={() => this.handleShow(index)}>Postular</button>
+
                                                         </div>
                                                     </div>
                                                 </div>
@@ -87,6 +105,22 @@ class AyudantiasDisponibles extends Component {
                     </div>
                     <div className="col-md-2"></div>
                 </div>
+
+                <Modal show={this.state.show} onHide={this.handleClose}>
+                    <Modal.Header closeButton>
+                    <Modal.Title>Confirmación</Modal.Title>
+                    </Modal.Header>
+                    <Modal.Body>¿Esta seguro que desea postular?</Modal.Body>
+                    <Modal.Footer>
+                    <button className="Boton_si" onClick={()=>this.HandleInscripcion(this.state.index)}>
+                        Aceptar
+                    </button>
+                    <button className="Boton_no" onClick={()=>this.handleClose()}>
+                        Cancelar
+                    </button>
+                    </Modal.Footer>
+                </Modal>
+
             </div>
         )
     }

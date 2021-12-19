@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import {PerfilEjemplo} from "./PerfilEjemplo";
 import './MiPerfil.css';
+import fotoPerfil from '../../logos/perfil.png'
 
 class MiPerfil extends Component {
     constructor(){
@@ -30,46 +31,42 @@ class MiPerfil extends Component {
                         </ul>
                     </div>
                 </div>
-                <div className = "MiPerfil">
-                    <div className='borde_F'>
-                        <div className="row">
-                            <div className="col">
-                                <div className='Nombre_Perfil'>
-                                    Nombre: Jamett
-                                </div>
-                            </div>
-                            <div className="col">
-                                <div className='Campus_Perfil'>
-                                    Campus: San Joaquin
-                                </div>
-                            </div>
-                        </div>
-                        <div className="row">
-                            <div className="col">
-                                <div className='Prioridad_Perfil'>
-                                    Prioridad: 9000
-                                </div>
-                            </div>
-                            <div className="col">
-                                <div className='Carrera_Perfil'>
-                                    Carrera: Informatica
-                                </div>
-                            </div>
-                        </div>
-                        <div className="row">
-                            <div className="col">
-                                <div className='Clase_Perfil'>
-                                    Clase: A
-                                </div>
-                            </div>
-                            <div className="col">
-                                <div className='Rol_Perfil'>
-                                    Rol: 11111111-1
-                                </div>
-                            </div>
-                        </div>
+                
+                <section className="grid-info-estudiante">
+                    <div className='dato_Perfil'>
+                        Nombre: Rodrigo Andrés Pérez Jamett
                     </div>
-                </div>
+
+                    <img className="fotoPerfil" src={fotoPerfil}></img>
+
+                    <div className='dato_Perfil'>
+                        Campus: San Joaquin
+                    </div>
+                    <div className='dato_Perfil'>
+                        Prioridad: 9000
+                    </div>
+                    <div className='dato_Perfil'>
+                        Carrera: Informatica
+                    </div>
+                    <div className='dato_Perfil'>
+                        Clase: A
+                    </div>
+                    <div className='dato_Perfil'>
+                        Rol: 123456789-0
+                    </div>
+                    <div className='dato_Perfil'>
+                        Certificación EAA: 14/02/2020
+                    </div>
+                    <div className='dato_Perfil'>
+                        Vigencia: 14/02/2022
+                    </div>
+                    <a className='linkCertificado' href="#">
+                        Ver certificado actual
+                    </a>
+                    <div className='ActualizarCertButton'>
+                        Actualizar certificación
+                    </div>
+                </section>
             </div>
         )
     }

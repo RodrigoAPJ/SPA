@@ -25,7 +25,7 @@ class App extends Component {
 
 	RenderPage(){
 		let render;		
-		render = <h1>Default Page</h1>
+		render = <Menu></Menu>
 
 		if(this.state) {
 			if(this.state.toRender === "MisPostulaciones")
@@ -34,7 +34,7 @@ class App extends Component {
 				render = <AyudantiasDisponibles></AyudantiasDisponibles>
 			else if(this.state.toRender === "MiPerfil")
 				render = <MiPerfil></MiPerfil>
-				else if(this.state.toRender === "Menu")
+			else if(this.state.toRender === "Menu")
 				render = <Menu></Menu>
 		}
 
@@ -47,7 +47,10 @@ class App extends Component {
 				<Navbar sendData={this.changePage}/>
 
 				<div className="RenderContainer">
-					{this.RenderPage()}
+					<div className="colorBg">
+						{this.RenderPage()}
+					</div>	
+					
 				</div>
 
 				<div className="Footer">

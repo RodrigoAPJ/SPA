@@ -1,9 +1,11 @@
+@import "../../variables.css";
+
 .NavbarItems {
     height: 54px;
     display: flex;
     font-size: 1.2rem;
-    border-bottom: 0px solid #f7f1e3;
-    background: #056573;
+    background-color: var(--color-7);
+
 }
 
 .nav-links-clicado{

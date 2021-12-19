@@ -1,5 +1,10 @@
+@import "./variables.css";
+
 .App {
   text-align: center;
+  font-family: 'MuliRegular';
+   font-weight: normal;
+   font-style: normal; 
 }
 
 .App-logo {
@@ -38,28 +43,36 @@
 }
 
 .RenderContainer {
-  height: 570px;
+  height: 557px;
   overflow-x: hidden;
   overflow-y: auto;
-  background-color: #424242;
+  color: var(--color-4);
+  background-image: url('/src/logos/fondo.jpg');
+
+  
+  background-size: 100%;
+ 
 }
 
+.colorBg{
+  height: inherit;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background: rgba(0, 0, 0, 0.753);
+}
 
 .Footer {
-	
-	height: calc(100%-624px);
-	width: 100%;
 	color:#FFFFFF; 
 	font-size:1.5em;
 	text-align: center;
 	line-height:100px;
 
-	background: rgb(255,121,63);
+	background: var(--color-7);
   overflow-y: hidden;
 }
 
 .logoFooter {
-	width: 356px;
+	width: 324px;
 	float: left;
 	margin-left: 10px;
 }

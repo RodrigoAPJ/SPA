@@ -1,12 +1,31 @@
 import React, { Component } from "react";
-import {PostulacionesDeEjemplo} from "../../Ejemplos";
 import './Detalle.css';
+import { Modal } from 'react-bootstrap';
+import '../PopUp/PopUp.css'
 
 class Detalle extends Component {
     
     constructor(){
         super();
         this.RenderSelected = this.RenderSelected.bind(this);
+
+        this.state = {show: false};
+
+        this.handleClose = this.handleClose.bind(this);
+        this.handleShow = this.handleShow.bind(this);
+        this.handleYes = this.handleYes.bind(this);
+    }
+
+    handleClose() {
+        this.setState({show:false});
+    }
+    handleShow() {
+        this.setState({show:true});
+    }
+
+    handleYes(){
+        this.props.RemoveData(this.props.dataFromEstado);
+        this.handleClose();
     }
 
     componentDidMount(){
@@ -44,6 +63,11 @@ class Detalle extends Component {
                                     Campus: {this.props.dataFromEstado.Campus}
                                 </div>
                             </li>
+                            <li className='data' key='7'>
+                                <div className="Campus">
+                                    Estado: {this.props.dataFromEstado.estado}
+                                </div>
+                            </li>
                             <div className='TituloTablaMayor' key='6'>Horas Semanales</div>
                             
                             <table className='Tabla'>
@@ -62,8 +86,25 @@ class Detalle extends Component {
                                 </tbody>
                             </table>
                             <div className='Boton'>
-                                <button className='DespostularButton' onClick={this.props.funcBoton}>Eliminar postulación</button>
+                                <button className='DespostularButton' onClick={this.handleShow}>Eliminar postulación</button>
                             </div>
+
+                            <Modal show={this.state.show} onHide={this.handleClose}>
+                                <Modal.Header closeButton>
+                                <Modal.Title>Confirmación</Modal.Title>
+                                </Modal.Header>
+                                <Modal.Body>¿Esta seguro que desea cancelar postulación?</Modal.Body>
+                                <Modal.Footer>
+                                <button className="Boton_si" onClick={this.handleYes}>
+                                    Aceptar
+                                </button>
+                                <button className="Boton_no" onClick={this.handleClose}>
+                                    Cancelar
+                                </button>
+                                </Modal.Footer>
+                            </Modal>
+
+
                         </div>
                     </ul>
                 </div>

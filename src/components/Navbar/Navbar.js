@@ -32,7 +32,7 @@ class Navbar extends Component {
                 
                 <ul className='nav-menuSPA'>
                     <li> 
-                        <a className="SPA" ref="#" onClick={() => this.changePage("SPA")}>
+                        <a className="SPA" ref='#' onClick={() => this.changePage("Menu")}>
                             SPA
                         </a>
                     </li>
@@ -40,7 +40,7 @@ class Navbar extends Component {
                 <ul className={this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
                     {MenuItems.map((item, index) => {
 
-                        if(this.pageIndex ==  index){
+                        if(this.pageIndex ===  index){
                             return (
                                 <li className={item.clicado} key={index}>
                                     <a className={item.cName} href="#" onClick={() => this.changePage(item.url,index)}>

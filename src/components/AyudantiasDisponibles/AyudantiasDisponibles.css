@@ -1,3 +1,5 @@
+@import "../../variables.css";
+
 .ayus {
     margin-top: 25px;
 }
@@ -7,9 +9,11 @@
     padding-left: 26px;
     
     width: 100%;
-    background-color: #b6c7cf;
+    background-color: var(--color-5);
+    color:black;
 }
 .AyudantiasDisponibles-container{
+    margin-top: 25px;
     flex-direction: column;
     width: 100%;
     margin-bottom: 25px;
@@ -41,11 +45,11 @@
     padding-left: 15px;
 
     background-color: white;
-    border: 2px solid rgba(88,67,67,0.43);
+    border: 0px solid rgba(88,67,67,0.43);
     color: black;
 
 
-    font-size: 14px;
+    font-size: 16px;
     text-align: left;
     transition: border 2s, background-color 2s;
 }
@@ -65,15 +69,15 @@
     width: 110px;
     padding: 5px;
 
-    border: 2px solid rgb(244,132,69);
-    background-color: white;
-    color: rgb(253, 164, 31);
-
+    border: 2px solid var(--color-2);
+    background-color: var(--color-5);
+    color: var(--color-2);
     font-size: 14px;
-    transition: border 2s, background-color 2s;
+    transition: border 1s, color 1s;
 }
 
 .InfoButton:hover{
+    color:rgb(244,132,69);
     border: 2px solid rgb(244,132,69);
 }
 
@@ -83,8 +87,8 @@
     width: 110px;
     padding: 5px;
 
-    background-color: rgb(244,132,69);
-    border: 2px solid rgb(244,132,69);
+    background-color: var(--color-2);
+    border: 2px solid  var(--color-2);
     color: white;
 
 

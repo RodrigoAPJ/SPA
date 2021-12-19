@@ -1,92 +1,97 @@
-.borde_F {
-    width: 800px;
-	height: 475px;
-	text-align: left;
-	padding: 25px;
-	margin-left: 25%;
-	margin-top: 25px;
-	padding-right: 0;
-	border: 2px solid gray;
-    background-color: #b6c7cf;
-    border-style:ridge;
+@import "../../variables.css";
+
+.Perfil {
+	width: clamp(200px, 50%, 600px);
+	margin-left: calc(50% - clamp(200px, 50%, 600px)/2);
+	margin-top: 50px;
 }
 
-.Nombre_Perfil {
+.dato_Perfil {
 	text-align: left;
-	padding: 25px;
-	margin-left: 5%;
-	margin-top: 110px;
-	padding-right: 0;
+	margin-left: 10%;
+
+	font-size: large;
+	color: black;
 }
 
-.Campus_Perfil {
+.linkCertificado{
 	text-align: left;
-	padding: 25px;
-	margin-left: 5%;
-	margin-top: 110px;
-	padding-right: 0;
+	margin-left: 10%;
+
+	font-size: large;
 }
 
-.Prioridad_Perfil {
-	text-align: left;
-	padding: 25px;
-	margin-left: 5%;
-	padding-right: 0;
+.fotoPerfil{
+	width: 110px;
+	margin-left: calc(100% - 180px);
+	border: 1px solid var(--color-2);
+	grid-row: span 2 / auto;
 }
 
-.Clase_Perfil {
-	text-align: left;
-	padding: 25px;
-	margin-left: 5%;
-	padding-right: 0;
-}
+.ActualizarCertButton{
+	width: 190px;
+    padding: 5px;
 
-.Rol_Perfil {
-	text-align: left;
-	padding: 25px;
-	margin-left: 5%;
-	padding-right: 0;
-}
+    background-color: var(--color-2);
+    border: 2px solid  var(--color-2);
+    color: white;
 
-.Carrera_Perfil {
-	text-align: left;
-	padding: 25px;
-	margin-left: 5%;
-	padding-right: 0;
+    font-size: 14px;
+    transition: border 2s, background-color 2s;
+	margin-left: 10%;
 }
 
 .myButton_Perfil{
-    position: relative;
-    float: left;
-    
     height: auto;
     width: 180px;
     padding-left: 15px;
 
-    background-color: rgb(255,121,63);
-    border: 2px solid rgba(88,67,67,0.43);
+	margin-right: 100%;
+
+    background-color: white;
+    border: 0px solid rgba(88,67,67,0.43);
     color: black;
 
 
-    font-size: 14px;
+    font-size: 16px;
     text-align: left;
     transition: border 2s, background-color 2s;
 }
 
-.dropdown-container{
-    padding: 1px;
-    margin-left: 25%;
-    margin-top: 25px;
-}
-
 .dropdown-item{
-    background-color: rgb(255,121,63);
+    background-color: var(--color-5);
 }
 
 .dropdown-item:hover{
-    background-color: #b6c7cf;
+    background-color: var(--color-6);
 }
 
 .dropdown-menu{
-    background-color: rgb(255,121,63);
+    background-color: var(--color-5);
+}
+
+.show{
+	border: 0px;
+	font-size: 16px;
+}
+
+.grid-info-estudiante {
+	
+	display: grid;
+	gap: 1.25rem;
+	grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
+
+	border: 0px ridge var(--color-5);
+    background-color: var(--color-5);
+	border-radius: 8px;
+
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+@media screen and (min-width:800px){
+	.wider {
+		grid-column: span 2 / auto;
+		margin-left: 2.6%;
+	}	
 }
