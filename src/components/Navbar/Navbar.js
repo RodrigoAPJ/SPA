@@ -32,7 +32,7 @@ class Navbar extends Component {
                 
                 <ul className='nav-menuSPA'>
                     <li> 
-                        <a className="SPA" ref='#' onClick={() => this.changePage("Menu")}>
+                        <a className="SPA" ref='#' onClick={() => this.changePage("Menu", 0)}>
                             SPA
                         </a>
                     </li>
